@@ -214,34 +214,6 @@ footer {
   border-top: 1px solid #333;
   padding-top: 2rem;
   color: #777;
-}
-.collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-
-.collapsible.open .collapsible-content {
-  max-height: 5000px; /* big enough for your longest section */
-}
-
-.collapsible-header {
-  cursor: pointer;
-  user-select: none;
-  position: relative;
-  padding-right: 30px;
-}
-
-.collapsible-header::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.collapsible.open .collapsible-header::after {
-  content: "–";
-}
 
 .top-nav{
     position:sticky;
@@ -271,3 +243,4 @@ html{
    scroll-behavior: smooth;
    scroll-padding-top:70px;
 }
+
