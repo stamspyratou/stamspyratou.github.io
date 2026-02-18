@@ -246,3 +246,11 @@ footer {
   padding-top: 1.6rem; /* was 2rem */
   color: #777;
 }
+/* FORCE CONTENT TO RESPECT PAGE WIDTH */
+main img,
+header img,
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
