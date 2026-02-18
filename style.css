@@ -215,32 +215,23 @@ footer {
   padding-top: 2rem;
   color: #777;
 
-.top-nav{
-    position:sticky;
-   top:0;
-   z-index:999; 
-   display:flex;
-   gap:16px;
-   justify-content: center;
-   padding: 12px 16px; 
-   background: rgba(0,0,0,0,0.8);
-   backdrop-filter:blur(6px);
-}
-.top-nav a{
-   color:#fff;
-   text-decoration: none;
-   font-weight: 600;
-}
-.top-nav a{
-   color:#fff;
-   text-decoration:none;
-   font-weight:600;
-}
-.top-nav a:hover{
-   text-decoration:underline;
-}
-html{
-   scroll-behavior: smooth;
-   scroll-padding-top:70px;
+.top-nav {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
 }
 
+.top-nav a {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.top-nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
