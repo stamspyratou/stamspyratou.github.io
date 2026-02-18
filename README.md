@@ -51,7 +51,7 @@ I update it as I learn, experiment, and complete new projects — so expect chan
 If you want to talk about games, 3D art, collaboration, or cool workflows:
 
 - 📧 Email: stamatina.spyratos@gmail.com  
-- 🌐 Portfolio: https://stamsyratou.github.io/
+- 🌐 Portfolio: https://stamspyratou.github.io/
 
 Thanks for stopping by ✨  
 Feel free to explore.
