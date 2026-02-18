@@ -9,12 +9,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* helps if you use #anchors */
+}
+
 body {
   font-family: "VT323", monospace;
   background: #0e0e0e;
   color: #eaeaea;
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 16px; /* was 18px (smaller + cleaner) */
 }
 
 /* =====================
@@ -25,11 +30,37 @@ main,
 footer {
   max-width: 1100px;
   margin: auto;
-  padding: 2rem;
+  padding: 1.2rem; /* was 2rem (less huge) */
 }
 
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem; /* was 4rem */
+}
+
+/* =====================
+   TOP NAV (STICKY)
+===================== */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #222;
+}
+
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
 }
 
 /* =====================
@@ -37,8 +68,8 @@ section {
 ===================== */
 header h1 {
   font-family: "Press Start 2P", cursive;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.6rem; /* was 2rem */
+  margin-bottom: 0.8rem;
 }
 
 header p {
@@ -49,7 +80,7 @@ header p {
    HEADINGS
 ===================== */
 h2 {
-  font-size: 2rem;
+  font-size: 1.6rem; /* was 2rem */
   margin-bottom: 1rem;
   border-bottom: 2px solid #333;
   padding-bottom: 0.5rem;
@@ -103,7 +134,7 @@ p {
 
 .edu-details {
   color: #aaa;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 /* =====================
@@ -113,14 +144,14 @@ p {
 .project,
 .project-card {
   background: #161616;
-  padding: 2rem;
+  padding: 1.6rem; /* slightly reduced */
   border-radius: 10px;
-  margin-bottom: 3rem;
+  margin-bottom: 2.2rem; /* slightly reduced */
 }
 
 .project-meta,
 .project-subtitle {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #aaa;
   margin-bottom: 1rem;
 }
@@ -161,7 +192,7 @@ img {
 }
 
 .project-image {
-  margin: 1.5rem 0;
+  margin: 1.2rem 0;
 }
 
 /* =====================
@@ -197,7 +228,7 @@ a:hover {
    INTERNSHIP SECTION
 ===================== */
 .internship-section h1 {
-  font-size: 2.2rem;
+  font-size: 2rem; /* was 2.2rem */
   margin-bottom: 0.5rem;
 }
 
@@ -212,33 +243,6 @@ a:hover {
 footer {
   text-align: center;
   border-top: 1px solid #333;
-  padding-top: 2rem;
+  padding-top: 1.6rem; /* was 2rem */
   color: #777;
-}
-.top-nav{
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  padding: 12px 16px;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(6px);
-}
-
-.top-nav a{
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.top-nav a:hover{
-  text-decoration: underline;
-}
-
-
-html{
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px;
 }
